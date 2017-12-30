@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+
+</head>
+
+<body>
+<div class="header"></div>
+
+<h1>Learning JavaScript</h1>
+<p>Training, learninig</p>
+
+<script>
+
+  //Constructor Pattern
+  function Fruit(name, color, shape) {
+    this.name = name;
+    this.color = color;
+    this.shape = shape;
+
+    this.describe = function () {
+        return 'A '+this.name+ ' is the color '+this.color+ ' and is the shape '+this.shape;
+    }
+  }
+var melon = new Fruit ('melon', 'green', 'round');
+
+console.log(melon.describe());
+
+
+  //var apple = new Fruit('apple', 'red', 'round');
+
+  //var melon = new Fruit('melon', 'green', 'round');
+
+//console.log(melon.shape);
+
+    //Object Constructor, apple discription
+   /* var apple = {};
+    apple.color = 'red';
+    apple.shape = 'round';
+
+    apple.discribe = function(){
+        return 'An apple is the color '+this.color+' and is the shape'+this.shape;
+    };
+
+    console.log(apple.discribe());
+*/
+
+
+//Object literal added adress and fullName function
+  /*  var person = {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 25,
+        children: ['Dorothy', 'Nicole'],
+        address: {
+            street: '555 Baker str',
+            city: 'London',
+            state: 'NA'
+        },
+        fullName: function(){
+            return this.firstName + " " +this.lastName;
+        }
+    };
+
+    console.log(person.fullName());
+*/
+
+
+//Object literal log choldren and name, age
+/*
+var person = {
+
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 25,
+    children: ['Dorothy', 'Nicole']
+};
+
+console.log(person.children[0]);
+*/
+
+</script>
+
+
+</body>
+</html>
